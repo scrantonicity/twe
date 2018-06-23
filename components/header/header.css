@@ -1,0 +1,10 @@
+#header {
+  background-color: #000;
+  padding-left: 1em;
+}
+
+#header h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+}

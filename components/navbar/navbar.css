@@ -1,0 +1,88 @@
+.navbar {
+  width:100%;
+  max-height: 80px
+}
+
+.title-bar-center {
+  text-align: center;
+  margin: auto;
+  display: block;
+  z-index: 100;
+  position: inherit;
+  pointer-events: none;
+}
+
+.title-bar-row {
+  width: 100%;
+}
+
+img.logo {
+  margin: auto;
+  display: block;
+  max-width: 110px;
+  margin-top: 45px;
+  z-index: 100;
+  /*position: inherit;*/
+  pointer-events: visiblePainted;
+}
+
+.title-bar {
+  width: 100%;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16pt;
+  z-index: 99;
+  max-height: 80px;
+  margin: 0;
+}
+.title-bar a {
+  color: #ffffff;
+}
+
+.title-bar-container {
+  width:100%;
+}
+
+.nav-select {
+  text-align: center;
+}
+
+.nav-select a:hover {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: #000;
+  padding: 0.5rem;
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.menu:hover {
+  background-color: #7A7A7A;
+  padding: 0.5rem;
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #ffffff
+}
+
+#calendar {
+  margin-left: 30px;
+}
+
+
+#members {
+  background-color: #b00;
+  padding: 0.5rem;
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#members:hover {
+  background-color: #FF4B4B;
+  color:#ffffff;
+}

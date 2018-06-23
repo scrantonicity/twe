@@ -1,0 +1,30 @@
+.footer {
+  background-color: #4c4c4c;
+  color: #ffffff;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 1em;
+}
+
+.footer a {
+  text-decoration: underline; 
+  color: #ffffff
+}
+
+.footer h4 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.footer-social img {
+  max-height: 50px;
+  -webkit-filter: grayscale(1);
+}
+.footer-social img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}

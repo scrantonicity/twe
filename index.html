@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app = "eventsApp">
+
+<!-- css and js links go in here -->
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dylan Hyun">
+	<meta name="keywords" content="Tartan Wind Ensemble, Carnegie Mellon, Pittsburgh">
+	<meta name="CMU Tartan Wind Ensemble">
+
+	<title>Tartan Wind Ensemble</title>
+
+	<!-- %%%% STYLES %%%% -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- Foundation (old) -->
+	<!-- <link rel="stylesheet" media="all" type="text/css" href="css/foundation.css" > -->
+	<!-- <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"> -->
+
+	<!-- Icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+	<!-- General App Styles -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/app.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/navbar/navbar.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/header/header.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/timer/timer.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/footer/footer.css">
+
+	<!-- %%%% SCRIPTS %%%% -->
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+
+	<!-- Boostrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- General App Scripts -->
+	<script src="js/events.js"></script>
+	<script src="./components/timer/timer.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="row" id="header">
+	<h3>Carnegie Mellon Tartan Wind Ensemble</h3>
+</div>
+<div class="title-bar navbar navbar-default sticky-top d-flex justify-content-center align-items-center">
+	<div class="container">
+		<div class="title-bar-row row">
+			<div class="col nav-select d-flex justify-content-center align-items-center"><a class="menu" href="about.html">About</a></div>
+			<div class="col nav-select d-flex justify-content-center align-items-center"><a class="menu" href="contact.html">Contact</a></div>
+			<div class="col nav-select d-flex justify-content-center align-items-center" id="logo"><img class="logo" href="index.html" src="./assets/logo.png" alt="Tartan Wind Ensemble Logo"></div>
+			<div class="col nav-select d-flex justify-content-center align-items-center"><a class="menu" href="calendar.html">Calendar</a></div>
+			<div class="col nav-select d-flex justify-content-center align-items-center"><a class="menu "id="members" href="members_login.html">Members</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="row no-gutters timers-container">
+	<div class="col-md-6">
+		<div class="timer">
+			<p><b>Days Until Next Rehearsal</b></p>
+			<p id="countdown1"></p>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="timer">
+			<p><b>Days Until Spring Concert</b></p>
+			<p id="countdown2"></p>
+		</div>
+	</div>
+</div>
+
+<div class="row" id="news">
+	<div class="col-md-8" id="news_img">
+		<img src="./assets/news.jpg" alt="TWE warming up for the 2017 Winter Concert">
+	</div>
+	<div class="col-md-4">
+		<h1>News</h1>
+		<div id="accordion">
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          Collapsible Group Item #1
+	        </button>
+	      </h5>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	      <div class="card-body">
+	        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	      </div>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <div class="card-header" id="headingTwo">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	          Collapsible Group Item #2
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+	      <div class="card-body">
+	        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	      </div>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <div class="card-header" id="headingThree">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	          Collapsible Group Item #3
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+	      <div class="card-body">
+	        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col">
+		<h1>col1</h1>
+	</div>
+	<div class="col">
+		<h1>col2</h1>
+	</div>
+</div>
+
+<h1>Upcoming Events</h1></br>
+
+<div class="row" id="events">
+	<!-- <ul class="accordion" data-accordion>
+			<li class="accordion-item is-active" data-accordion-item>
+				<a href="#" class="accordion-title">Jan 16th 1st Spring Rehearsal</a>
+				<div class="accordion-content" data-tab-content>
+					<p>6-8pm Studio Theatre</p>
+    			</div>
+			</li>
+			<li class="accordion-item" data-accordion-item>
+				<a href="#" class="accordion-title">Jan 23rd Rehearsal</a>
+				<div class="accordion-content" data-tab-content>
+					<p>6-8pm Studio Theatre</p>
+    			</div>
+			</li>
+			<li class="accordion-item" data-accordion-item>
+				<a href="#" class="accordion-title">Jan 24th Activities Fair</a>
+				<div class="accordion-content" data-tab-content>
+					<p>4:30-6:30pm Wiegand Gym</p>
+    			</div>
+			</li>
+	</ul> -->
+	<div ng-controller= "EventsController as eventList">
+		<div class="col card" ng-repeat = "event in eventList.events">
+			<span>{{event.date}}</span>
+			<span>{{event.title}}</span>
+			<span>{{event.time}}</span>
+			<span>{{event.location}}</span>
+		</div>
+	</div>
+
+	<form ng-submit = "eventsList.addEvent()">
+		<input type = "text" ng-model = "eventsList.eventDate" placeholder="Date of Event">
+		<input type = "text" ng-model = "eventsList.eventTitle" placeholder="Title">
+		<input type = "text" ng-model = "eventsList.eventTime" placeholder="Time">
+		<input type = "text" ng-model = "eventsList.eventLocation" placeholder="Location">
+		<input class="btn-primary" type="submit" value="add">
+	</form>
+
+</div>
+
+<div class="row footer">
+    <div class="col">
+    	<ul>
+    		<li>© 
+    			<script type="text/javascript">
+					var theDate=new Date()
+					document.write(theDate.getFullYear())
+				</script> Tartan Wind Ensemble
+			</li>
+			<li>5000 Forbes Ave.</li>
+			<li>Pittsburgh, PA 15213</li>
+			<li>cmutwe@gmail.com</li>
+		</ul>
+	</div>
+	<div class="col">
+		<ul>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="about.html">Join</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</div>
+	<div class="col">
+		<ul>
+			<li>Connect with TWE</li>
+			<li>
+				<div class="footer-social">
+					<a href="https://www.facebook.com/tartanwindensemble/" target="_blank">
+						<img src="./assets/fb.png" alt="facebook icon">
+					</a>
+					<a href="https://thebridge.cmu.edu/organization/twe" target="_blank">
+						<img src="./assets/bridge.png" alt="the bridge icon">
+					</a>
+				</div>
+			</li>
+		</ul>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/foundation.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app = "eventsApp">
+
+<!-- css and js links go in here -->
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dylan Hyun">
+	<meta name="keywords" content="Tartan Wind Ensemble, Carnegie Mellon, Pittsburgh">
+	<meta name="CMU Tartan Wind Ensemble">
+
+	<title>Tartan Wind Ensemble</title>
+
+	<!-- %%%% STYLES %%%% -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- Foundation (old) -->
+	<!-- <link rel="stylesheet" media="all" type="text/css" href="css/foundation.css" > -->
+	<!-- <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"> -->
+
+	<!-- Icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+	<!-- General App Styles -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/app.css" >
+	<link rel="stylesheet" media="all" type="text/css" href="./timer.css">
+
+	<!-- %%%% SCRIPTS %%%% -->
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+
+	<!-- Boostrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- General App Scripts -->
+	<script type="text/javascript" src="./timer.js"></script>
+
+</head>
+
+<body>
+	<div class="row no-gutters timers-container">
+		<div class="col-md-6">
+			<div class="timer">
+				<p><b>Days Until Next Rehearsal</b></p>
+				<p id="countdown1"></p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="timer">
+				<p><b>Days Until Spring Concert</b></p>
+				<p id="countdown2"></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+p, h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* News */
+#news {
+  padding: 0;
+
+}
+
+#news_img {
+  padding: 0;
+}
+
+/* Events */
+#events {
+  text-align: center;
+  margin: 1rem
+}
+
+/* About Nav */
+#about_nav {
+  background-color: #085;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: -45px;
+  margin-bottom: -10px;
+}
+
+#about_nav a {
+  color: #ffffff;
+  font-size: 2rem;
+  /*display: block;*/
+  text-decoration: none;
+  z-index: 100;
+}
+
+#about_nav h1 {
+  text-align: center;
+}
+
+#about_nav a:hover {
+  color: #000;
+}
+
+/* Officers */
+#officers {
+  padding: 1rem;
+  /*padding-left: 2rem;*/
+}
+
+#officers img {
+  max-height: 230px;
+  margin: auto;
+  display: block;
+}
+
+#title{
+  font-size: 16pt;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#officers img {
+  border-radius: 50%;
+}
+
+#president {
+  margin-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+#president img {
+  max-height: 300px
+}
+
+#people {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#people_2 {
+  text-align: center;
+}
+
+/* Join */
+#join {
+  padding: 1rem;
+  text-align: center;
+}
+
+#join p,h1 {
+  text-align: left;
+}
+
+/* FAQ */
+#faq {
+  padding: 1rem;
+}
+
+/* Calendar */
+.responsiveCal {
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+}
+ 
+.responsiveCal iframe {
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}
+
+
+

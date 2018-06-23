@@ -1,0 +1,23 @@
+Thing to Do:
+
+Pages:
+- About
+- Contact
+- Calendar (could be link to google calendar)
+- members section (important)
+
+Page Aspects:
+- footer
+- more features for home page??
+- password popup for members section
+
+Design Aspects: 
+- improve accordions
+- headers
+- fix awkward blank top right corner
+- make mobile compatable 
+
+Uncertain Things:
+- make multiple pages or single page
+- have seperate section for members with password
+- timers on homepage
