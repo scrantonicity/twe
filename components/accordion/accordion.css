@@ -1,0 +1,28 @@
+.card {
+	border: 1pt solid #999;
+	border-radius: 0;
+}
+
+.card-header>h5>.btn-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.card-header>h5>.collapsed{
+	text-decoration: none;
+	color: #999;
+}
+
+.card-header>h5>.collapsed i {
+	transform: rotate(270deg);
+}
+
+.card-header {
+	border: 0;
+	border-radius: 0;
+}
+
+.card-header>h5>button:hover {
+	text-decoration: none;
+	color: #000;
+}

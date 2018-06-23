@@ -1,3 +1,9 @@
+.container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
 p, h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
 }
@@ -18,10 +24,6 @@ img {
 }
 
 /* News */
-#news {
-  padding: 0;
-
-}
 
 #news_img {
   padding: 0;
