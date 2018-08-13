@@ -1,5 +1,12 @@
+.accordion-container {
+	overflow-y: scroll;
+}
+
+#accordion {
+	overflow-y: scroll;
+}
+
 .card {
-	border: 1pt solid #999;
 	border-radius: 0;
 }
 
@@ -17,12 +24,12 @@
 	transform: rotate(270deg);
 }
 
-.card-header {
-	border: 0;
-	border-radius: 0;
-}
-
 .card-header>h5>button:hover {
 	text-decoration: none;
 	color: #000;
+}
+
+.card-body {
+	height: 275px;
+	overflow-y: scroll;
 }
