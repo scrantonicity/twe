@@ -30,6 +30,6 @@
 }
 
 .card-body {
-	height: 275px;
+	max-height: 275px;
 	overflow-y: scroll;
 }

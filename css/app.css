@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(0,0,0,.03);
+}
+
 .container {
   padding: 0;
   margin: 0;
@@ -21,11 +25,6 @@ img {
 .row {
   margin-left: 0;
   margin-right: 0;
-}
-
-.section-header {
-  background-color: #666;
-  color: #88D4B8;
 }
 
 /* News */

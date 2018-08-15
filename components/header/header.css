@@ -1,10 +1,4 @@
-#header {
-  background-color: #000;
-  padding-left: 1em;
-}
-
-#header h3 {
-  font-family: 'Open Sans', sans-serif;
-  color: #fff;
-  font-weight: 300;
+.section-header {
+  background-color: #ccc;
+  color: #085;
 }
