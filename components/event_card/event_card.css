@@ -4,10 +4,15 @@
 }
 
 .event-card>.card-body {
+  background-color: #fff;
   font-size: 18px;
 }
 
 .event-card>.card-header {
-  background-color: #085;
-  color: #fff;
+  background-color: #ccc;
 }
+
+.event-card>.card-footer {
+  background-color: #ccc;
+}
+

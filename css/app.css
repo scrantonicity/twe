@@ -12,10 +12,14 @@ p, h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
+h1, h2 {
   font-family: 'Open Sans';
   font-weight: 300;
   font-style: normal;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 img {
@@ -27,47 +31,46 @@ img {
   margin-right: 0;
 }
 
+.page_head_img {
+  padding: 0;
+  height: 100%;
+}
+
 /* News */
 
 .news>.accordion{
   max-height: 300px;
 }
 
-#news_img {
-  padding: 0;
-  height: 100%;
-}
-
 /* Events */
-#events {
-  text-align: center;
-  margin: 1rem
+.events {
+  background-color: #085
 }
 
 /* About Nav */
-#about_nav {
+.about_nav {
   background-color: #085;
-  text-align: center;
-  display: inline-block;
   width: 100%;
-  margin-top: -45px;
-  margin-bottom: -10px;
 }
 
-#about_nav a {
+.about_nav a {
   color: #ffffff;
   font-size: 2rem;
-  /*display: block;*/
   text-decoration: none;
-  z-index: 100;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
 }
 
-#about_nav h1 {
-  text-align: center;
-}
-
-#about_nav a:hover {
+.about_nav a:hover {
   color: #000;
+}
+
+.table-pieces a {
+  color: #666;
+  font-size: 10pt;
+  font-weight: 100;
+  text-decoration: underline;
 }
 
 /* Officers */
