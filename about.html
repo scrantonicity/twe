@@ -34,6 +34,9 @@
   <link rel="stylesheet" media="all" type="text/css" href="./components/footer/footer.css">
   <link rel="stylesheet" media="all" type="text/css" href="./components/accordion/accordion.css">
   <link rel="stylesheet" media="all" type="text/css" href="./components/event_card/event_card.css">
+  <link rel="stylesheet" media="all" type="text/css" href="./components/concert_sets_archive/concert_sets_archive_roster/concert_sets_archive_roster.css">
+  <link rel="stylesheet" media="all" type="text/css" href="./components/concert_sets_archive/concert_sets_archive_content/concert_sets_archive_content.css">
+  <link rel="stylesheet" media="all" type="text/css" href="./components/concert_sets_archive/concert_sets_archive.css">
 
   <!-- %%%% END STYLES %%%% -->
 
@@ -41,6 +44,9 @@
 
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+
+  <!-- Popper -->
+  <script src="https://unpkg.com/popper.js"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,6 +57,7 @@
 
   <!-- General App Scripts -->
   <script src="./js/events.js"></script>
+  <script src="./components/concert_sets_archive/concert_sets_archive_roster/concert_sets_archive_roster.js"></script>
   <!-- <script src="./components/timer/timer.js"></script> -->
 
   <!-- %%%% END SCRIPTS %%%% -->
@@ -109,80 +116,139 @@
       </div>
       <div class="col-lg-4">
         <div class="section-header">
-          <h2 class="p-3 mb-0">About Us</h1>
+          <h2 class="p-3 mb-0">About Us
+            </h1>
         </div>
-        <p class="p-3">The Tartan Wind Ensemble is a musical ensemble at Carnegie Mellon University in Pittsburgh, PA. It provides an opportunity
-          for any person affiliated with the University, including but not limited to students, staff, faculty, or alumni,
-          to rehearse and perform in a wind ensemble in a recreational manner with no auditions.</p>
+        <p class="p-3">The Tartan Wind Ensemble is a musical ensemble at Carnegie Mellon University in Pittsburgh, PA. It
+          provides an opportunity for any person affiliated with the University, including but not limited to students, staff,
+          faculty, or alumni, to rehearse and perform in a wind ensemble in a recreational manner with no auditions.</p>
       </div>
     </div>
 
-    <div class="row">
+    <div class="concert-sets-archive row no-gutters">
       <div class="section-header">
-        <h2 class="p-3 mb-0">Previous Concert Sets</h2>
+        <h2 class="p-3 mb-0">Previous Concert Sets
+          </h1>
       </div>
-      <table class="table table-striped table-pieces">
-        <caption style="display: none;">List of Previous Concert Sets and Pieces</caption>
-        <thead class="">
-          <tr>
-            <th scope="col">Semester</th>
-            <th scope="col">Piece</th>
-            <th scope="col">Composer</th>
-          </tr>
-        </thead>
-        <tr>
-          <th rowspan="5" scope="row">
-            Spring 2018</br>
-            <a href="https://www.facebook.com/tartanwindensemble/videos/185326845439636/" target="_blank">Watch Performance</a>
-          </th>
-          <td>Awakening Hills</td>
-          <td>Richard Saucedo</td>
-        </tr>
-        <tr>
-          <td>Reverberations</td>
-          <td>Brian Balmages</td>
-        </tr>
-        <tr>
-          <td>Lock Lemond</td>
-          <td>Frank Ticheli</td>
-        </tr>
-        <tr>
-          <td>Masque</td>
-          <td>Franic McBeth</td>
-        </tr>
-        <tr>
-          <td>When Never Lark or Eagle Flew</td>
-          <td>James Curnow</td>
-        </tr>
-        <tr>
-          <th rowspan="6" scope="row">
-            Fall 2017</br>
-            <a href="https://www.facebook.com/tartanwindensemble/videos/151278948844426/" target="_blank">Watch Performance</a>
-          </th>
-            <td>Whip and Spur</td>
-            <td>Thomas Allen</td>
-        </tr>
-        <tr>
-          <td>Emperata Overture</td>
-          <td>Claude Smith</td>
-        </tr>
-        <tr>
-          <td>Irish Tune and Shepard's Hay</td>
-          <td>Percy Grainger</td>
-        </tr>
-        <tr>
-          <td>Of Barges and Boats</td>
-          <td>Stephen Bulla</td>
-        </tr>
-        <tr>
-          <td>Overture in B♭</td>
-          <td>Caesar Giovannini</td>
-        </tr>
-        <tr>
-          <td>Second Suite in F</td>
-          <td>Gustav Holst</td>
-        </tr>
-      </table>
+      <div class="nav col-md-4 flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-f17-tab" data-toggle="pill" href="#v-pills-f17" role="tab" aria-controls="v-pills-home"
+          aria-selected="true">Fall 2017</a>
+        <a class="nav-link" id="v-pills-s18-tab" data-toggle="pill" href="#v-pills-s18" role="tab" aria-controls="v-pills-home" aria-selected="false">Spring
+          2018
+        </a>
+      </div>
+      <div class="tab-content col-md-8" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-f17" role="tabpanel" aria-labelledby="v-pills-f17-tab">
+          <div class="concert-set-content border border-dark border-top-0 border-bottom-0 border-right-0">
+            <div class="row no-gutters">
+              <div class="col-md-6 border border-dark border-left-0 border-bottom-0 border-top-0">
+                <div class="archive-header d-flex align-items-center justify-content-center p-2">
+                  Concert Set
+                </div>
+                <table class="table table-striped table-pieces mb-0">
+                  <tr>
+                    <td>Whip and Spur</td>
+                    <td>Thomas S. Allen</td>
+                  </tr>
+                  <tr>
+                    <td>Emperata Overture</td>
+                    <td>Claude T. Smith</td>
+                  </tr>
+                  <tr>
+                    <td>Irish Tune and Shepherd's Hey</td>
+                    <td>Percy Grainger</td>
+                  </tr>
+                  <tr>
+                    <td>Of Barges and Boats</td>
+                    <td>Stephen Bulla</td>
+                  </tr>
+                  <tr>
+                    <td>Overture in B Flat</td>
+                    <td>Caesar Giovannini</td>
+                  </tr>
+                  <tr>
+                    <td>Second Suite in F</td>
+                    <td>Gustav Holst</td>
+                  </tr>
+                </table>
+                <a href="https://www.facebook.com/tartanwindensemble/videos/151278948844426/" target="_blank">
+                  <button class="btn btn-sm m-2">Watch Performance</button>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <div class="archive-header d-flex align-items-center justify-content-center p-2">
+                  Ensemble Members
+                </div>
+                <div class="invisible-box d-flex justify-content-center align-items-center">
+                  <div id="f17-concert-row-1" class="concert-row-1 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="f17-concert-row-2" class="concert-row-circle concert-row-2 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="f17-concert-row-3" class="concert-row-circle concert-row-3 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="f17-concert-row-4" class="concert-row-circle concert-row-4 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="f17-concert-row-5" class="concert-row-circle concert-row-5 d-flex justify-content-center align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show" id="v-pills-s18" role="tabpanel" aria-labelledby="v-pills-s18-tab">
+          <div class="concert-set-content border border-dark border-top-0 border-bottom-0 border-right-0">
+            <div class="row no-gutters">
+              <div class="col-md-6 border border-dark border-left-0 border-bottom-0 border-top-0">
+                <div class="archive-header d-flex align-items-center justify-content-center p-2">
+                  Concert Set
+                </div>
+                <table class="table table-striped table-pieces mb-0">
+                  <tr>
+                    <td>Awakening Hills</td>
+                    <td>Richard Saucedo</td>
+                  </tr>
+                  <tr>
+                    <td>Reverberations</td>
+                    <td>Brian Balmages</td>
+                  </tr>
+                  <tr>
+                    <td>Lock Lemond</td>
+                    <td>Frank Ticheli</td>
+                  </tr>
+                  <tr>
+                    <td>Masque</td>
+                    <td>Franic McBeth</td>
+                  </tr>
+                  <tr>
+                    <td>When Never Lark or Eagle Flew</td>
+                    <td>James Curnow</td>
+                  </tr>
+                </table>
+                <a href="https://www.facebook.com/tartanwindensemble/videos/185326845439636/" target="_blank">
+                  <button class="btn btn-sm m-2">Watch Performance</button>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <div class="archive-header d-flex align-items-center justify-content-center p-2">
+                  Ensemble Members
+                </div>
+                <div class="invisible-box d-flex justify-content-center align-items-center">
+                  <div id="s18-concert-row-1" class="concert-row-1 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="s18-concert-row-2" class="concert-row-circle concert-row-2 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="s18-concert-row-3" class="concert-row-circle concert-row-3 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="s18-concert-row-4" class="concert-row-circle concert-row-4 d-flex justify-content-center align-items-center">
+                  </div>
+                  <div id="s18-concert-row-5" class="concert-row-circle concert-row-5 d-flex justify-content-center align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -233,6 +299,7 @@
     </div>
   </div>
   </div>
+  <script src="js/concert_sets_archive_data.js"></script>
 </body>
 
 </html>

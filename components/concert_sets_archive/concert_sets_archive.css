@@ -1,0 +1,8 @@
+.concert-sets-archive .nav-link {
+  border-radius: 0;
+  color: #666
+}
+
+.concert-sets-archive .nav-link.active {
+  background-color: #666;
+}

@@ -1,7 +1,8 @@
 class Roster {
-  constructor(semester, members) {
+  constructor(semester, members, abrv) {
     this.semester = semester;
     this.members = members;
+    this.abrv = abrv;
   }
 }
 
@@ -14,15 +15,15 @@ class Member {
 }
 
 function createSeating(roster) {
-  clearSeating();
+  clearSeating(roster.abrv);
   roster.members.forEach(member => {
-    placeInSeat(member)
+    placeInSeat(member, roster.abrv)
   });
-  arrangeSeats();
+  arrangeSeats(roster.abrv);
 }
 
-function placeInSeat(member) {
-  let row = document.getElementById(`concert-row-${member.row}`)
+function placeInSeat(member, abrv) {
+  let row = document.getElementById(`${abrv}-concert-row-${member.row}`)
   let person = document.createElement('div');
   if (row == 1) {
     person.classList.add('conductor');
@@ -34,29 +35,25 @@ function placeInSeat(member) {
   row.appendChild(person);
 }
 
-function arrangeSeats() {
+function arrangeSeats(abrv) {
   for (i = 2; i < 6; i++) {
-    let row = document.getElementById(`concert-row-${i}`);
+    let row = document.getElementById(`${abrv}-concert-row-${i}`);
     let numPeople = row.children.length;
     let seatSpacingAngle = 180 / numPeople;
     if (numPeople % 2 == 1) {
+      let startAngle = -(seatSpacingAngle * (Math.floor((numPeople) / 2)))
       for (j = 0; j < numPeople; j++) {
         let person = row.children[j];
-        let seatAngle = seatSpacingAngle * (Math.floor((j + 1) / 2));
-        if (j % 2 == 1) {
-          seatAngle = -1 * seatAngle;
-        }
+        let seatAngle = startAngle + (seatSpacingAngle * j);
         seatAngle = seatAngle + 270;
         let padding = ((i - 1) * 4) / 2;
         person.style = `transform: rotate(${seatAngle}deg) translate(${padding}em) rotate(-${seatAngle}deg);`;
       }
     } else {
+      let startAngle = -(seatSpacingAngle / 2 + seatSpacingAngle * (Math.floor((numPeople-1) / 2)));
       for (j = 0; j < numPeople; j++) {
         let person = row.children[j];
-        let seatAngle = seatSpacingAngle / 2 + seatSpacingAngle * (Math.floor(j / 2));
-        if (j % 2 == 0) {
-          seatAngle = -1 * seatAngle;
-        }
+        let seatAngle = startAngle + (seatSpacingAngle*j);
         seatAngle = seatAngle + 270;
         let padding = ((i - 1) * 4) / 2;
         person.style = `transform: rotate(${seatAngle}deg) translate(${padding}em) rotate(-${seatAngle}deg);`;
@@ -65,12 +62,12 @@ function arrangeSeats() {
   }
 }
 
-function clearSeating() {
-  document.getElementById('concert-row-1').innerHTML = "";
-  document.getElementById('concert-row-2').innerHTML = "";
-  document.getElementById('concert-row-3').innerHTML = "";
-  document.getElementById('concert-row-4').innerHTML = "";
-  document.getElementById('concert-row-5').innerHTML = "";
+function clearSeating(abrv) {
+  document.getElementById(`${abrv}-concert-row-1`).innerHTML = "";
+  document.getElementById(`${abrv}-concert-row-2`).innerHTML = "";
+  document.getElementById(`${abrv}-concert-row-3`).innerHTML = "";
+  document.getElementById(`${abrv}-concert-row-4`).innerHTML = "";
+  document.getElementById(`${abrv}-concert-row-5`).innerHTML = "";
 }
 
 $(function () {

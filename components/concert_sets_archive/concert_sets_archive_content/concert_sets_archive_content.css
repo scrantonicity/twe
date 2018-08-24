@@ -1,0 +1,21 @@
+.concert-set-content a:hover {
+  text-decoration: none;
+}
+
+.concert-set-content button {
+  background-color: #085;
+  color: #fff;
+}
+
+.concert-set-content button:hover {
+  opacity: 0.85;
+}
+
+.concert-set-content table {
+  width: 100%;
+}
+
+.archive-header {
+  background-color: #085;
+  color: #fff;
+}
