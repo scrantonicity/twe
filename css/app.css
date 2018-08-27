@@ -53,6 +53,7 @@ img {
 .about_nav {
   background-color: #085;
   width: 100%;
+  z-index: -1;
 }
 
 .about_nav a {
