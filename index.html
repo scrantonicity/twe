@@ -62,9 +62,9 @@
   <div class="container">
 
     <div class="row pl-3" id="header">
-      <h1>Carnegie Mellon Tartan Wind Ensemble</h1>
+      <h1 class="m-0">Carnegie Mellon Tartan Wind Ensemble</h1>
     </div>
-    <div class="title-bar row navbar navbar-default sticky-top d-flex justify-content-center align-items-center">
+    <div class="title-bar title-bar-desktop row navbar navbar-default sticky-top d-none d-lg-flex justify-content-center align-items-center">
       <div class="container">
         <div class="title-bar-row row">
           <div class="col nav-select d-flex justify-content-center align-items-center">
@@ -79,7 +79,7 @@
             </a>
           </div>
           <div class="col nav-select d-flex justify-content-center align-items-center">
-            <a class="menu" href="calendar.html">Calendar</a>
+            <a class="menu" href="https://calendar.google.com/calendar/embed?src=cmutwe%40gmail.com&ctz=America%2FNew_York">Calendar</a>
           </div>
           <div class="col nav-select d-flex justify-content-center align-items-center">
             <a class="menu " id="members" href="members.html">Members</a>
@@ -87,25 +87,40 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="row no-gutters timers-container">
-        <div class="col-md-6">
-          <div class="timer">
-            <p>
-              <b>Next Rehearsal Date</b>
-            </p>
-            <p>September 3rd, 2018</p>
+    <div class="title-bar title-bar-tablet row navbar navbar-default sticky-top d-none d-md-flex d-lg-none justify-content-center align-items-center">
+      <div class="container">
+        <div class="title-bar-row title-bar-tablet row">
+          <div class="col nav-select d-flex justify-content-center align-items-center">
+            <a class="menu" href="about.html">About</a>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="timer">
-            <p>
-              <b>Days Until Spring Concert</b>
-            </p>
-            <p id="countdown2"></p>
+          <div class="col nav-select d-flex justify-content-center align-items-center">
+            <a class="menu" href="contact.html">Contact</a>
           </div>
+          <div class="col nav-select d-flex justify-content-center align-items-center" id="logo">
+            <a href="index.html">
+              <img class="logo" src="./assets/logo.png" alt="Tartan Wind Ensemble Logo">
+            </a>
+          </div>
+          <div class="col nav-select d-flex justify-content-center align-items-center">
+            <a class="menu" href="https://calendar.google.com/calendar/embed?src=cmutwe%40gmail.com&ctz=America%2FNew_York">Calendar</a>
+          </div>
+          <div class="col nav-select d-flex justify-content-center align-items-center">
+            <a class="menu " id="members" href="members.html">Members</a>
+          </div>
+        </div>Î
+      </div>
+    </div>
+    <div class="title-bar title-bar-mobile row navbar navbar-default d-md-none d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="title-bar-row title-bar-mobile row ">
+          <a class="menu btn btn-block" href="home.html">Home</a>
+          <a class="menu btn btn-block" href="about.html">About</a>
+          <a class="menu btn btn-block" href="contact.html">Contact</a>
+          <a class="menu btn btn-block" href="https://calendar.google.com/calendar/embed?src=cmutwe%40gmail.com&ctz=America%2FNew_York">Calendar</a>
+          <a class="menu btn btn-block" href="members.html">Members</a>
         </div>
-      </div> -->
+      </div>
+    </div>
 
     <div class="row no-gutters news">
       <div class="col-lg-8 page_head_img">
@@ -154,22 +169,22 @@
             </div>
           </div>
           <div class="card border-0">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <i class="fas fa-chevron-down"></i>
-                    Officers Ready to Tackle the New Year
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  All of our officers have been hard at work getting ready for an amazing fall semester.
-                  We are excited to have this year be our first with actual funding, and our own closet.
-                  We also are so excited to see all of our members here again and create some great music.
-                </div>
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fas fa-chevron-down"></i>
+                  Officers Ready to Tackle the New Year
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                All of our officers have been hard at work getting ready for an amazing fall semester. We are excited to have this year be
+                our first with actual funding, and our own closet. We also are so excited to see all of our members here
+                again and create some great music.
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -239,18 +254,10 @@
     </div>
     <div class="col">
       <ul>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a href="calendar.html">Calendar</a>
-        </li>
-        <li>
-          <a href="about.html">Join</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://calendar.google.com/calendar/embed?src=cmutwe%40gmail.com&ctz=America%2FNew_York">Calendar</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="members.html">Members</a></li>
       </ul>
     </div>
     <div class="col">
