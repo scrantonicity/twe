@@ -40,7 +40,7 @@ BrandonJ,JacquelineL,ElyceM,JamesS,JettV], 'f17');
 createSeating(Fall17);
 
 // Spring 2018
-const DallasL = new Member('Dallas Long', 'Condustor', 1);
+const DallasL = new Member('Dallas Long', 'Conductor', 1);
 const AnjaliB = new Member('Anjali Balamurgan', 'Clarinet', 2);
 const RuiQ = new Member('Rui Qui Chen', 'Clarinet', 2);
 const ZachK = new Member('Zach Kowalewski', 'Alto Saxaphone', 3);
