@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="eventsApp">
 
 <!-- css and js links go in here -->
+
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Dylan Hyun">
@@ -11,119 +12,233 @@
 
 	<title>Tartan Wind Ensemble</title>
 
-	<link rel="stylesheet" media="all" type="text/css" href="css/foundation.css" >
-	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+	<!-- %%%% STYLES %%%% -->
 
-	<link rel="stylesheet" media="all" type="text/css" href="css/app.css" >
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
 
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+
+	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+	<!-- General App Styles -->
+	<link rel="stylesheet" media="all" type="text/css" href="./components/navbar/navbar.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/header/header.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/timer/timer.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/footer/footer.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/accordion/accordion.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/event_card/event_card.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/concert_sets_archive/concert_sets_archive_roster/concert_sets_archive_roster.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/concert_sets_archive/concert_sets_archive_content/concert_sets_archive_content.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/concert_sets_archive/concert_sets_archive.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/officer_profile/officer_profile.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./components/link-button/link-button.css">
+	<link rel="stylesheet" media="all" type="text/css" href="./css/app.css">
+
+
+	<!-- %%%% END STYLES %%%% -->
+
+	<!-- %%%% SCRIPTS %%%% -->
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+
+	<!-- Popper -->
+	<script src="https://unpkg.com/popper.js"></script>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Boostrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+
+	<!-- General App Scripts -->
+	<script src="./js/events.js"></script>
+	<script src="./components/concert_sets_archive/concert_sets_archive_roster/concert_sets_archive_roster.js"></script>
+	<!-- <script src="./components/timer/timer.js"></script> -->
+
+	<!-- %%%% END SCRIPTS %%%% -->
 
 </head>
 
 <body>
 
+	<div class="container">
+		<div class="row pl-3" id="header">
+			<h1>Carnegie Mellon Tartan Wind Ensemble</h1>
+		</div>
+		<div class="title-bar row navbar navbar-default sticky-top d-flex justify-content-center align-items-center">
+			<div class="container">
+				<div class="title-bar-row row">
+					<div class="col nav-select d-flex justify-content-center align-items-center">
+						<a class="menu" href="about.html">About</a>
+					</div>
+					<div class="col nav-select d-flex justify-content-center align-items-center">
+						<a class="menu" href="contact.html">Contact</a>
+					</div>
+					<div class="col nav-select d-flex justify-content-center align-items-center" id="logo">
+						<a href="index.html">
+							<img class="logo" src="./assets/logo.png" alt="Tartan Wind Ensemble Logo">
+						</a>
+					</div>
+					<div class="col nav-select d-flex justify-content-center align-items-center">
+						<a class="menu" href="calendar.html">Calendar</a>
+					</div>
+					<div class="col nav-select d-flex justify-content-center align-items-center">
+						<a class="menu " id="members" href="members.html">Members</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<div class="row" id="header">
-	<h3>Tartan Wind Ensemble Members Resources</h3>
-</div>
-<div data-sticky-container id="nav">
-  <div class="title-bar" data-sticky data-top-anchor="nav" data-options="marginTop:0;" style="width:100%">
-  	<div id="about" class="title-bar-left"><a id="menu" href="about.html">Music</a></div>
-  	<div id="contact" class="title-bar-left"><a id="menu" href="contact.html">Contact</a></div>
-  	<div id="calendar" class="title-bar-right"><a id="menu" href="calendar.html">Calendar</a></div>
-    <div class="title-bar-right"><a id="members" href="index.html">Exit Resources</a></div>
-  </div>
-  <div class="title-bar-center" data-sticky data-top-anchor="nav" data-options="marginTop:0;" style="width:100%"><img class="logo" href="index.html" src="images/logo.png" alt="Tartan Wind Ensemble Logo"></div>
-</div>
+		<div class="row">
+			<div class="col-md-12 p-3">
+				<a class="btn-twe-link rounded pl-3 p-2 d-flex align-items-center" href="https://docs.google.com/forms/d/1HIY75oaqHNxRYyJrmy0gHMQw5yjNsXFVKGFiGOhrSgc/edit">
+					<h3 class="m-0">
+						click to sign in
+					</h3>
+				</a>
+			</div>
+		</div>
 
-<div class="row" style="max-width: 100rem; margin-top: -2.8rem;">
-	<div class="small-6 columns" id="timers">
-		<div id="timer1">
-			<p><b>Days Until 1st Rehearsal</b></p>
-			<p id="countdown1"></p>
+		<div class="section-header">
+			<h2 class="p-3 mb-0">Current Music</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-4 p-3">
+				<div class="event-card border border-dark rounded">
+					<div class="card-body d-flex flex-column align-items-center">
+						<iframe src="https://www.youtube.com/embed/4aGULSe364E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="card-footer">
+						<p class="m-0">Four Gypsy Dances by Puszta</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 p-3">
+				<div class="event-card border border-dark rounded">
+					<div class="card-body d-flex flex-column align-items-center">
+						<iframe src="https://www.youtube.com/embed/fLbP6qpI1YI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="card-footer">
+						<p class="m-0">First Suite in E flat by Gustav Holst</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 p-3">
+				<div class="event-card border border-dark rounded">
+					<div class="card-body d-flex flex-column align-items-center">
+						<iframe src="https://www.youtube.com/embed/-rfMz9a4oYk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="card-footer">
+						<p class="m-0">On Hymnsong of Philip Bliss by David Holsinger</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 p-3">
+				<div class="event-card border border-dark rounded">
+					<div class="card-body d-flex flex-column align-items-center">
+						<iframe src="https://www.youtube.com/embed/l6iPDaJ2VZI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="card-footer">
+						<p class="m-0">Introduction and Fantasia by Rex Mitchell</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 p-3">
+				<div class="event-card border border-dark rounded">
+					<div class="card-body d-flex flex-column align-items-center">
+						<iframe src="https://www.youtube.com/embed/VdblzUBES5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="card-footer">
+						<p class="m-0">Where Never Lark Nor Eagle Flew by James Curnow</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-header">
+			<h2 class="p-3 mb-0">Contact an Officer</h2>
+		</div>
+		<div class="row">
+			<table class="table table-striped">
+				<tr>
+					<td>Need to rent an instrument or have a general question?</td>
+					<td>President Becky Jesurum</td>
+					<td>rjesurum@andrew.cmu.edu</td>
+				</tr>
+				<tr>
+					<td>Have a question about attendance?</td>
+					<td>Vice President Sarah Penfield</td>
+					<td>spenfielk@andrew.cmu.edu</td>
+				</tr>
+				<tr>
+					<td>Want to suggest a piece to play?</td>
+					<td>Director of Performance Karnia Chiu</td>
+					<td>karniac@andrew.cmu.edu</td>
+				</tr>
+				<tr>
+					<td>Have a problem with the d-list or the website?</td>
+					<td>Director of PR Dylan Hyun</td>
+					<td>dchyun@andrew.cmu.edu</td>
+				</tr>
+				<tr>
+					<td>Need a piece of music copied?</td>
+					<td>Librarians Chris Cortez and <br> Amanda Monteavaro</td>
+					<td>cdcortez@andrew.cmu.edu <br> amonteav@andrew.cmu.edu</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section-header">
+			<h2 class="p-3 mb-0">Miscellaneous Resources</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3 p-3">
+				<a class="btn-twe-link rounded pl-3 p-2 d-flex align-items-center justify-content-center" href="https://docs.google.com/forms/d/1HIY75oaqHNxRYyJrmy0gHMQw5yjNsXFVKGFiGOhrSgc/edit">
+					<h3 class="m-0">
+						Google Calendar
+					</h3>
+				</a>
+			</div>
+			<div class="col-md-3 p-3">
+				<a class="btn-twe-link rounded pl-3 p-2 d-flex align-items-center justify-content-center" href="https://docs.google.com/forms/d/1HIY75oaqHNxRYyJrmy0gHMQw5yjNsXFVKGFiGOhrSgc/edit">
+					<h3 class="m-0">
+						Youtube Playlist
+					</h3>
+				</a>
+			</div>
+			<div class="col-md-3 p-3">
+				<a class="btn-twe-link rounded pl-3 p-2 d-flex align-items-center justify-content-center" href="https://docs.google.com/forms/d/1HIY75oaqHNxRYyJrmy0gHMQw5yjNsXFVKGFiGOhrSgc/edit">
+					<h3 class="m-0">
+						Facebook Group
+					</h3>
+				</a>
+			</div>
+			<div class="col-md-3 p-3">
+				<a class="btn-twe-link rounded pl-3 p-2 d-flex align-items-center justify-content-center" href="https://docs.google.com/forms/d/1HIY75oaqHNxRYyJrmy0gHMQw5yjNsXFVKGFiGOhrSgc/edit">
+					<h3 class="m-0">
+						Facebook Page
+					</h3>
+				</a>
+			</div>
 		</div>
 	</div>
-	<div class="small-6 columns" id="timers">
-		<div id="timer2">
-			<p><b>Days Until Spring Concert</b></p>
-			<p id="countdown2"></p>
-		</div>
-	</div>
-</div>
 
-<div class="row">
-	<h1>Current Music</h1>
-	<div class="medium-4 columns">
-		<h3>Example Piece</h3>
-		<iframe width="100%" height="250" src="https://www.youtube.com/embed/qWPYXYXkeR4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	</div>
-	<div class="medium-4 columns">
-		<h3>Example Piece</h3>
-		<iframe width="100%" height="250" src="https://www.youtube.com/embed/qWPYXYXkeR4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	</div>
-	<div class="medium-4 columns">
-		<h3>Example Piece</h3>
-		<iframe width="100%" height="250" src="https://www.youtube.com/embed/qWPYXYXkeR4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	</div>
-</div>
-
-<div class="row" id="members_contact">
-	<h1>Contact</h1>
-	<table>
-		<tr>
-			<th>Topic</th>
-			<th>Officer</th>
-			<th>Email</th>
-		</tr>
-		<tr>
-			<td>General Questions or Comments</td>
-			<td>Becky Jeserum</td>
-			<td>rjesurum@andrew.cmu.edu</td>
-		</tr>
-		<tr>
-			<td>Questions About Attendence</td>
-			<td>Sarah Penfield</td>
-			<td>example@andrew.cmu.edu</td>
-		</tr>
-		<tr>
-			<td>Questions About Music Selection and Rehearsal</td>
-			<td>Karina Chiu</td>
-			<td>example@andrew.cmu.edu</td>
-		</tr>
-		<tr>
-			<td>Questions About Music</td>
-			<td>Chris Cortez and Amanada Monteavaro</td>
-			<td>example@andrew.cmu.edu</td>
-		</tr>
-		<tr>
-			<td>Questions About Fundraising</td>
-			<td>Brandon Jin</td>
-			<td>example@andrew.cmu.edu</td>
-		</tr>
-		<tr>
-			<td>Questions About Publicity</td>
-			<td>Dylan Hyun</td>
-			<td>example@andrew.cmu.edu</td>
-		</tr>
-	</table>
-</div>
-
-<div class="row">
-	<h1>Calendar</h1>
-	<div class="responsiveCal">
-		<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=cmutwe%40gmail.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
-	</div>
-</div>
-
-<div class="row" id="footer">
-	<div data-sticky-container>
-	    <div class="medium-4 columns">
-	    	<ul>
-	    		<li>© 
-	    			<script type="text/javascript">
-						var theDate=new Date()
+	<div class="row footer">
+		<div class="col">
+			<ul>
+				<li>©
+					<script type="text/javascript">
+						var theDate = new Date()
 						document.write(theDate.getFullYear())
 					</script> Tartan Wind Ensemble
 				</li>
@@ -132,36 +247,40 @@
 				<li>cmutwe@gmail.com</li>
 			</ul>
 		</div>
-		<div class="medium-4 columns">
+		<div class="col">
 			<ul>
-				<li><a href="contact.html">Forms</a></li>
-				<li><a href="about.html">Contact</a></li>
-				<li><a href="calendar.html">Calendar</a></li>
-				<li><a href="index.html">Exit Member Resources</a></li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="calendar.html">Calendar</a>
+				</li>
+				<li>
+					<a href="about.html">Join</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
 			</ul>
 		</div>
-		<div class="medium-4 columns">
+		<div class="col">
 			<ul>
 				<li>Connect with TWE</li>
 				<li>
-					<div id="footer-social">
+					<div class="footer-social">
 						<a href="https://www.facebook.com/tartanwindensemble/" target="_blank">
-							<img src="images/fb.png" alt="facebook icon">
+							<img src="./assets/fb.png" alt="facebook icon">
 						</a>
 						<a href="https://thebridge.cmu.edu/organization/twe" target="_blank">
-							<img src="images/bridge.png" alt="the bridge icon">
+							<img src="./assets/bridge.png" alt="the bridge icon">
 						</a>
 					</div>
 				</li>
 			</ul>
-	    </div>
-    </div>
-</div>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/foundation.js"></script>
-
-<script src="js/scripts.js"></script>
+		</div>
+	</div>
+	</div>
+	<script src="js/concert_sets_archive_data.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,3 +1,8 @@
+.color-scheme-twe-green {
+  background-color: #085;
+  color: #fff;
+}
+
 body {
   background-color: rgba(0,0,0,.03);
   font-family: 'Open Sans', sans-serif;
@@ -46,7 +51,7 @@ img {
 
 /* Events */
 .events {
-  background-color: #085
+  /* background-color: #085 */
 }
 
 /* About Nav */
@@ -74,61 +79,6 @@ img {
   font-size: 10pt;
   font-weight: 100;
   text-decoration: underline;
-}
-
-/* Officers */
-#officers {
-  padding: 1rem;
-  /*padding-left: 2rem;*/
-}
-
-#officers img {
-  max-height: 230px;
-  margin: auto;
-  display: block;
-}
-
-#title{
-  font-size: 16pt;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-#officers img {
-  border-radius: 50%;
-}
-
-#president {
-  margin-left: 3rem;
-  padding-bottom: 2rem;
-}
-
-#president img {
-  max-height: 300px
-}
-
-#people {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-#people_2 {
-  text-align: center;
-}
-
-/* Join */
-#join {
-  padding: 1rem;
-  text-align: center;
-}
-
-#join p,h1 {
-  text-align: left;
-}
-
-/* FAQ */
-#faq {
-  padding: 1rem;
 }
 
 /* Calendar */
