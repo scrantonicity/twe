@@ -43,6 +43,14 @@ img {
   height: 100%;
 }
 
+a {
+  color: #FF0000;
+}
+
+a:hover {
+  color: #FF0000;
+}
+
 /* News */
 
 .news>.accordion{
