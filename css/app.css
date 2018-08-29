@@ -1,3 +1,8 @@
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
 .color-scheme-twe-green {
   background-color: #085;
   color: #fff;
