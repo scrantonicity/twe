@@ -31,13 +31,13 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
   <!-- General App Styles -->
-  <link rel="stylesheet" media="all" type="text/css" href="./css/app.css">
-  <link rel="stylesheet" media="all" type="text/css" href="./components/navbar/navbar.css">
-  <link rel="stylesheet" media="all" type="text/css" href="./components/header/header.css">
-  <link rel="stylesheet" media="all" type="text/css" href="./components/timer/timer.css">
-  <link rel="stylesheet" media="all" type="text/css" href="./components/footer/footer.css">
-  <link rel="stylesheet" media="all" type="text/css" href="./components/accordion/accordion.css">
-  <link rel="stylesheet" media="all" type="text/css" href="./components/event_card/event_card.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../css/app.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../components/navbar/navbar.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../components/header/header.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../components/timer/timer.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../components/footer/footer.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../components/accordion/accordion.css">
+  <link rel="stylesheet" media="all" type="text/css" href="../components/event_card/event_card.css">
 
   <!-- %%%% END STYLES %%%% -->
 
