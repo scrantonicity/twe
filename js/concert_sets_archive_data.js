@@ -1,6 +1,6 @@
 // Fall 2017
 const EvanN = new Member('Evan Neely', 'Conductor', 1);
-const KarniaC = new Member('Karnia Chu', 'Flute', 2);
+const KarinaC = new Member('Karina Chu', 'Flute', 2);
 const DannyZ = new Member('Danny Zhu', 'Flute', 2);
 const IsabelB = new Member('Isabel Basow', 'Oboe', 2);
 const IanH = new Member('Ian Holst', 'Oboe', 2);
@@ -32,7 +32,7 @@ const JamesS = new Member('James Stumpf', 'Percussion', 5);
 const JettV = new Member('Jett Vaultz', 'Percussion', 5);
 
 const Fall17 = new Roster('Fall 2017', [EvanN,
-DavidN,IanH,IsabelB,DannyZ,KarniaC,
+DavidN,IanH,IsabelB,DannyZ,KarinaC,
 SarahB,AmandaM,SarahP,TeddyW,DerekY,SimoneS,
 JonathanC,MadisonS,MaxK,JordanS,JeffKFrench,KadeS,BeckyJ,ChrisC,BrandynA,DylanR,DylanH,MichaelS,GabeW,CaseyR,
 BrandonJ,JacquelineL,ElyceM,JamesS,JettV], 'f17');
@@ -53,7 +53,7 @@ const JeffKTru = new Member('Jeff Kang', 'Trumpet', 4);
 const YurongD = new Member('Yurong Diao', 'Percussion', 5);
 
 const Spring18 = new Roster('Spring 2018', [DallasL,
-AnjaliB,RuiQ,SarahB,DavidN,IsabelB,KarniaC,
+AnjaliB,RuiQ,SarahB,DavidN,IsabelB,KarinaC,
 AmandaM,SarahP,ZachK,NicholasS,RachelM,
 MichaelS,DylanR,ScottA,DylanH,ChrisC,BeckyJ,EvanS,EvanK,CaseyR,JeffKTru,MaxK,MadisonS,JonathanC,
 YurongD,BrandonJ,JacquelineL,JamesS,JettV], 's18')

@@ -1,5 +1,4 @@
 Thing to Do:
 
-- add conductor in there somewhere
 - make cards more cool
 - automize Eveevverrry thang
