@@ -54,7 +54,7 @@
     crossorigin="anonymous"></script>
 
   <!-- General App Scripts -->
-  <script src="./js/events.js"></script>
+  <script src="../js/events.js"></script>
   <!-- <script src="./components/timer/timer.js"></script> -->
 
   <!-- %%%% END SCRIPTS %%%% -->
